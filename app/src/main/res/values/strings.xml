@@ -15,11 +15,21 @@
     <string name="onboarding_guidance_desc">With our support chat, you can get immediate and automated advice on the app. If you don’t have wifi, you can sign up for SMS notifcations!</string>
     <string name="onboarding_lifeline_title">Your Lifeline when an emergency hits</string>
     <string name="onboarding_lifeline_desc">If you find yourself in a situation where you need help immediately, you can come to Hanai for an updated list of resources closest to you.</string>
-
-    <!-- Onboarding - Button -->
     <string name="btn_next_step">Next Step</string>
     <string name="btn_next">Next</string>
     <string name="btn_previous">Previous</string>
     <string name="btn_skip">Skip</string>
+
+    <!-- Mobile Number Verification -->
+    <string name="phone_auth_toolbar_title">Phone Authentication</string>
+    <string name="phone_auth_main_title">Enter your mobile number</string>
+    <string name="phone_auth_main_desc">Hanai will send you SMS text messages and standard rates may apply. You can always opt out.</string>
+    <string name="mobile_number_hint">Mobile Number</string>
+    <string name="mobile_number_verification_code_hint">Enter Code</string>
+    <string name="btn_send_me_a_code">Send Me A Code</string>
+    <string name="phone_auth_sms_request_title">Can we text you?</string>
+    <string name="phone_auth_sms_request_desc">Opt to receive SMS text messages for regular updates on your pregnancy or overall health</string>
+    <string name="phone_auth_sms_request_yes">Yes, I want SMS Texts</string>
+    <string name="phone_auth_sms_request_no">I don't want text updates</string>
 
 </resources>
