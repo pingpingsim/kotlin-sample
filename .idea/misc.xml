@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.11201368106028217" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/onboarding_viewpager_item.xml" value="0.11286874732791792" />
       </map>
     </option>
   </component>
