@@ -1,6 +1,25 @@
 <resources>
     <string name="app_name">Jiwa Ibu</string>
     <string name="action_settings">Settings</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+
+    <!-- Language -->
+    <string name="choose_language_title">Select your language</string>
+    <string name="choose_language_desc">Choose between English and Malay.\nYou can change this later.</string>
+    <string name="choose_language_en">English</string>
+    <string name="choose_language_malay">Malay</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_healthcare_title">Healthcare for women</string>
+    <string name="onboarding_healthcare_desc">You can interact with thousands of other mothers on Jiwa Ibu. Create a topic and share experiences with other mothers!</string>
+    <string name="onboarding_guidance_title">Guidance as soon as you need it</string>
+    <string name="onboarding_guidance_desc">With our support chat, you can get immediate and automated advice on the app. If you don’t have wifi, you can sign up for SMS notifcations!</string>
+    <string name="onboarding_lifeline_title">Your Lifeline when an emergency hits</string>
+    <string name="onboarding_lifeline_desc">If you find yourself in a situation where you need help immediately, you can come to Hanai for an updated list of resources closest to you.</string>
+
+    <!-- Onboarding - Button -->
+    <string name="btn_next_step">Next Step</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_previous">Previous</string>
+    <string name="btn_skip">Skip</string>
+
 </resources>
