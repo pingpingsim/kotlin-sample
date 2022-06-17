@@ -1,4 +1,4 @@
-package com.hanai.jiwa
+package com.hanai.jiwa.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.hanai.jiwa.R
 import com.hanai.jiwa.databinding.FragmentSecondBinding
 
 /**
