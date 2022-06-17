@@ -30,6 +30,7 @@
     <string name="phone_auth_sms_request_title">Can we text you?</string>
     <string name="phone_auth_sms_request_desc">Opt to receive SMS text messages for regular updates on your pregnancy or overall health</string>
     <string name="phone_auth_sms_request_yes">Yes, I want SMS Texts</string>
-    <string name="phone_auth_sms_request_no">I don't want text updates</string>
+    <string name="phone_auth_sms_request_no">I don\'t want text updates</string>
+
 
 </resources>
