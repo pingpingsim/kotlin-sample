@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Theme color -->
     <color name="color_on_primary">#3F3441</color>
     <color name="color_primary">#FAFAFA</color>
     <color name="color_primary_variant">#F4F4F4</color>
     <color name="color_secondary">#3F3441</color>
     <color name="color_on_secondary">#3F3441</color>
+
+    <!-- Button color -->
+    <color name="button_disabled">#E0E0E0</color>
+    <color name="button_disabled_text">#F2F2F2</color>
+    <color name="button_enabled">#3F3441</color>
+
+    <!-- Dot Indicator color -->
+    <color name="dot_indicator_active">#DE704D</color>
+    <color name="dot_indicator_inactive">#F4F0EF</color>
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
