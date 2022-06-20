@@ -1,12 +1,15 @@
 package com.hanai.jiwa.ui.component.onboarding
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.activity.viewModels
 import androidx.viewpager.widget.ViewPager
 import com.hanai.jiwa.R
 import com.hanai.jiwa.data.dto.onboarding.OnboardingContent
 import com.hanai.jiwa.databinding.ActivityOnboardingBinding
 import com.hanai.jiwa.ui.base.BaseActivity
+import com.hanai.jiwa.ui.component.dashboard.DashboardActivity
 import com.hanai.jiwa.ui.component.onboarding.adapter.OnboardingListAdapter
 import com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
 import dagger.hilt.android.AndroidEntryPoint
@@ -26,6 +29,14 @@ class OnboardingActivity : BaseActivity() {
         binding = ActivityOnboardingBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        binding.apply {
+            // skip button event handler
+            btnSkip.setOnClickListener {
+                val dashboardIntent = Intent(this@OnboardingActivity, DashboardActivity::class.java)
+                startActivity(dashboardIntent)
+                finish()
+            }
+        }
     }
 
     override fun observeViewModel() {

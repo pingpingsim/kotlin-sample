@@ -8,18 +8,6 @@
     android:paddingRight="@dimen/padding_16"
     tools:context=".ui.component.onboarding.OnboardingActivity">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_skip"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="@dimen/padding_16"
-        android:text="@string/btn_skip"
-        android:textAllCaps="false"
-        android:textColor="@color/black" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
@@ -77,5 +65,19 @@
 
     </RelativeLayout>
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_skip"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/padding_16"
+        android:gravity="right|center_vertical"
+        android:text="@string/btn_skip"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
 
 </RelativeLayout>
