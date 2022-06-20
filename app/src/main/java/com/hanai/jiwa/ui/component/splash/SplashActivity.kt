@@ -34,7 +34,7 @@ class SplashActivity : BaseActivity() {
      */
     private fun navigateToNextScreen() {
         Handler(Looper.getMainLooper()).postDelayed({
-            val landingScreen = Intent(this, DashboardActivity::class.java)
+            val landingScreen = Intent(this, OnboardingActivity::class.java)
             startActivity(landingScreen)
             finish()
         }, SPLASH_DELAY.toLong())

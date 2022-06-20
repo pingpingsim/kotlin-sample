@@ -8,7 +8,9 @@ import com.hanai.jiwa.data.dto.onboarding.OnboardingContent
 import com.hanai.jiwa.databinding.ActivityOnboardingBinding
 import com.hanai.jiwa.ui.base.BaseActivity
 import com.hanai.jiwa.ui.component.onboarding.adapter.OnboardingListAdapter
+import com.tbuonomo.viewpagerdotsindicator.DotsIndicator
 import com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -32,20 +34,36 @@ class OnboardingActivity : BaseActivity() {
     }
 
     fun initOnboardingContentViewPager() {
-        val dotsIndicator = findViewById<SpringDotsIndicator>(R.id.dot1)
+        val dotsIndicator = findViewById<DotsIndicator>(R.id.dot_indicator)
         val viewPager = findViewById<ViewPager>(R.id.view_pager)
-        onboardingListAdapter = OnboardingListAdapter(onboardingViewModel, getDummyContent())//listOf()
+        onboardingListAdapter =
+            OnboardingListAdapter(onboardingViewModel, getOnboardingContent())//listOf()
         viewPager.adapter = onboardingListAdapter
         viewPager.addOnPageChangeListener(viewPagerPageChangeListener)
         dotsIndicator.attachTo(viewPager)
     }
 
-    fun getDummyContent(): List<OnboardingContent> {
-        var list = ArrayList<OnboardingContent>()
-        list.add(OnboardingContent("title1", "desc1"))
-        list.add(OnboardingContent("title2", "desc2"))
-        list.add(OnboardingContent("title3", "desc3"))
-        return list
+    fun getOnboardingContent(): List<OnboardingContent> {
+        var onboardingContentList = ArrayList<OnboardingContent>()
+        onboardingContentList.add(
+            OnboardingContent(
+                getString(R.string.onboarding_healthcare_title),
+                getString(R.string.onboarding_healthcare_desc)
+            )
+        )
+        onboardingContentList.add(
+            OnboardingContent(
+                getString(R.string.onboarding_guidance_title),
+                getString(R.string.onboarding_guidance_desc)
+            )
+        )
+        onboardingContentList.add(
+            OnboardingContent(
+                getString(R.string.onboarding_lifeline_title),
+                getString(R.string.onboarding_lifeline_desc)
+            )
+        )
+        return onboardingContentList
     }
 
     var viewPagerPageChangeListener: ViewPager.OnPageChangeListener =

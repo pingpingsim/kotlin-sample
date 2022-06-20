@@ -10,6 +10,8 @@
     <dimen name="toolbar_font_size">16sp</dimen>
     <dimen name="splash_title_font">28sp</dimen>
 
+    <dimen name="button_corner_radius">8dp</dimen>
+
     <!-- Padding -->
     <dimen name="padding_16">16dp</dimen>
 

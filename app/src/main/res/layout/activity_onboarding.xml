@@ -1,26 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_16"
+    android:paddingRight="@dimen/padding_16"
     tools:context=".ui.component.onboarding.OnboardingActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_skip"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/padding_16"
+        android:text="@string/btn_skip"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="300dp" />
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_panel" />
 
-    <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
-        android:id="@+id/dot1"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:dotsColor="@android:color/holo_green_light"
-        app:dotsSize="15dp"
-        app:dotsSpacing="5dp"
-        app:progressMode="true"
-        app:selectedDotColor="@android:color/holo_green_dark" />
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_prev"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/dot_indicator"
+            android:text="@string/btn_previous"
+            android:textAllCaps="false"
+            android:textColor="@color/dot_indicator_active"
+            app:backgroundTint="@color/color_primary_variant"
+            app:cornerRadius="@dimen/button_corner_radius" />
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dot_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:dotsColor="@color/dot_indicator_inactive"
+            app:selectedDotColor="@color/dot_indicator_active"
+            app:dotsSize="10dp"
+            app:progressMode="false"
+            app:dotsSpacing="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dot_indicator"
+            android:text="@string/btn_next"
+            android:textAllCaps="false"
+            android:textColor="@color/dot_indicator_active"
+            app:backgroundTint="@color/color_primary_variant" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
