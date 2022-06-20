@@ -10,7 +10,7 @@
         app:showAsAction="always" />
 
     <item
-        android:id="@+id/navigation_search"
+        android:id="@+id/navigation_resources"
         android:icon="@drawable/logo"
         android:orderInCategory="2"
         android:title="@string/bottom_nav_menu_title_resources"

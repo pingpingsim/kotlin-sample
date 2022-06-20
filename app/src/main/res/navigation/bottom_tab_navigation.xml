@@ -11,7 +11,7 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_search"
+        android:id="@+id/navigation_resources"
         android:name="com.hanai.jiwa.ui.component.dashboard.resources.ResourcesFragment"
         tools:layout="@layout/fragment_resources" />
 
