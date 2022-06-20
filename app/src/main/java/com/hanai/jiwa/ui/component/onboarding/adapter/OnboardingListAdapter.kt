@@ -3,6 +3,7 @@ package com.hanai.jiwa.ui.component.onboarding.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.viewpager.widget.PagerAdapter
 import com.hanai.jiwa.R
@@ -23,8 +24,10 @@ class OnboardingListAdapter(
         )
         var titleTextView: TextView = view.findViewById(R.id.txt_title)
         var descTextView: TextView = view.findViewById(R.id.txt_desc)
+        var logoImageView: ImageView = view.findViewById(R.id.img)
         titleTextView.text = contentItem.title
         descTextView.text = contentItem.desc
+        logoImageView.setImageResource(contentItem.imageResourceId)
 
         container.addView(view, position)
 

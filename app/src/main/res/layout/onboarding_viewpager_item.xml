@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/padding_16">
 
     <ImageView
-        android:id="@+id/image_view"
+        android:id="@+id/img"
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:layout_above="@+id/txt_title"

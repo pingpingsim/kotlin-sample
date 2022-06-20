@@ -46,19 +46,22 @@ class OnboardingActivity : BaseActivity() {
         onboardingContentList.add(
             OnboardingContent(
                 getString(R.string.onboarding_healthcare_title),
-                getString(R.string.onboarding_healthcare_desc)
+                getString(R.string.onboarding_healthcare_desc),
+                R.mipmap.maternity
             )
         )
         onboardingContentList.add(
             OnboardingContent(
                 getString(R.string.onboarding_guidance_title),
-                getString(R.string.onboarding_guidance_desc)
+                getString(R.string.onboarding_guidance_desc),
+                R.mipmap.phone
             )
         )
         onboardingContentList.add(
             OnboardingContent(
                 getString(R.string.onboarding_lifeline_title),
-                getString(R.string.onboarding_lifeline_desc)
+                getString(R.string.onboarding_lifeline_desc),
+                R.mipmap.lifeline
             )
         )
         return onboardingContentList
