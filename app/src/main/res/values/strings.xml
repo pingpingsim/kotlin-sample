@@ -52,4 +52,7 @@
     <string name="mom_profile_get_started">Get Started</string>
     <string name="mom_profile_due_date_unknown">I don\'t know my due date</string>
 
+    <!-- Bottom Nav Menu -->
+    <string name="bottom_nav_menu_title_home">Home</string>
+    <string name="bottom_nav_menu_title_resources">Resources</string>
 </resources>
