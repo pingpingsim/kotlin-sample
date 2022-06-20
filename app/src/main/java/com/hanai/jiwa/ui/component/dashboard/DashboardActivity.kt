@@ -1,6 +1,7 @@
 package com.hanai.jiwa.ui.component.dashboard
 
 import android.os.Bundle
+import android.view.View
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
@@ -22,10 +23,12 @@ class DashboardActivity : BaseActivity() {
         binding = ActivityDashboardBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        binding.apply { toolbar.title = "" }
     }
 
     override fun observeViewModel() {
     }
+
 
     private fun initBottomNavView() {
         val navHostFragment =

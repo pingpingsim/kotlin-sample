@@ -7,5 +7,6 @@
     <dimen name="main_desc">12sp</dimen>
     <dimen name="language_option">16sp</dimen>
     <dimen name="button_text">16sp</dimen>
+    <dimen name="toolbar_font_size">16sp</dimen>
 
 </resources>

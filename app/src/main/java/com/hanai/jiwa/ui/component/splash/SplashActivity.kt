@@ -7,6 +7,7 @@ import android.os.Looper
 import com.hanai.jiwa.SPLASH_DELAY
 import com.hanai.jiwa.databinding.ActivitySplashBinding
 import com.hanai.jiwa.ui.base.BaseActivity
+import com.hanai.jiwa.ui.component.dashboard.DashboardActivity
 import com.hanai.jiwa.ui.component.onboarding.OnboardingActivity
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -33,7 +34,7 @@ class SplashActivity : BaseActivity() {
      */
     private fun navigateToNextScreen() {
         Handler(Looper.getMainLooper()).postDelayed({
-            val landingScreen = Intent(this, OnboardingActivity::class.java)
+            val landingScreen = Intent(this, DashboardActivity::class.java)
             startActivity(landingScreen)
             finish()
         }, SPLASH_DELAY.toLong())
