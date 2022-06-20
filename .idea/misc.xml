@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/font/euclidcircular.xml" value="0.1409877585479105" />
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.14269605410715724" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
