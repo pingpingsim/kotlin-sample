@@ -8,9 +8,7 @@ import com.hanai.jiwa.data.dto.onboarding.OnboardingContent
 import com.hanai.jiwa.databinding.ActivityOnboardingBinding
 import com.hanai.jiwa.ui.base.BaseActivity
 import com.hanai.jiwa.ui.component.onboarding.adapter.OnboardingListAdapter
-import com.tbuonomo.viewpagerdotsindicator.DotsIndicator
 import com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
-import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

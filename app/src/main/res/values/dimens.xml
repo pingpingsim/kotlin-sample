@@ -4,7 +4,7 @@
     <!-- Font Size -->
     <dimen name="splash_logo_title">32sp</dimen>
     <dimen name="main_title">20sp</dimen>
-    <dimen name="main_desc">12sp</dimen>
+    <dimen name="main_desc">13sp</dimen>
     <dimen name="language_option">16sp</dimen>
     <dimen name="button_text">16sp</dimen>
     <dimen name="toolbar_font_size">16sp</dimen>
