@@ -8,5 +8,9 @@
     <dimen name="language_option">16sp</dimen>
     <dimen name="button_text">16sp</dimen>
     <dimen name="toolbar_font_size">16sp</dimen>
+    <dimen name="splash_title_font">28sp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding_16">16dp</dimen>
 
 </resources>

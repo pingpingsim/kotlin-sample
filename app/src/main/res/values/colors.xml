@@ -6,6 +6,7 @@
     <color name="color_primary_variant">#F4F4F4</color>
     <color name="color_secondary">#3F3441</color>
     <color name="color_on_secondary">#3F3441</color>
+    <color name="splash_bg">#F4F0EF</color>
 
     <!-- Button color -->
     <color name="button_disabled">#E0E0E0</color>
