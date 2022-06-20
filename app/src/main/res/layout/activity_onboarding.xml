@@ -48,17 +48,19 @@
             app:backgroundTint="@color/color_primary_variant"
             app:cornerRadius="@dimen/button_corner_radius" />
 
-        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
             android:id="@+id/dot_indicator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            app:dotsColor="@color/dot_indicator_inactive"
-            app:selectedDotColor="@color/dot_indicator_active"
+            app:dotsColor="@color/dot_indicator_active"
             app:dotsSize="10dp"
+            app:dotsSpacing="8dp"
+            app:dotsStrokeColor="@color/dot_indicator_inactive"
+            app:dotsStrokeWidth="5dp"
             app:progressMode="false"
-            app:dotsSpacing="8dp"/>
+            app:selectedDotColor="@color/dot_indicator_active" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_next"

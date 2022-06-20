@@ -34,7 +34,7 @@ class OnboardingActivity : BaseActivity() {
     }
 
     fun initOnboardingContentViewPager() {
-        val dotsIndicator = findViewById<DotsIndicator>(R.id.dot_indicator)
+        val dotsIndicator = findViewById<SpringDotsIndicator>(R.id.dot_indicator)
         val viewPager = findViewById<ViewPager>(R.id.view_pager)
         onboardingListAdapter =
             OnboardingListAdapter(onboardingViewModel, getOnboardingContent())//listOf()
