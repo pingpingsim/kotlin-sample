@@ -33,5 +33,5 @@
     <style name="Theme.Jiwaibu.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Jiwaibu.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-    
+
 </resources>
