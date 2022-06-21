@@ -6,7 +6,7 @@ import androidx.activity.viewModels
 import com.hanai.jiwa.databinding.ActivitySmsAuthBinding
 import com.hanai.jiwa.ui.base.BaseActivity
 import com.hanai.jiwa.ui.component.auth.phone.PhoneAuthViewModel
-import com.hanai.jiwa.ui.component.dashboard.DashboardActivity
+import com.hanai.jiwa.ui.component.profile.ProfileActivity
 
 class SMSAuthActivity : BaseActivity() {
     private lateinit var binding: ActivitySmsAuthBinding
@@ -23,7 +23,7 @@ class SMSAuthActivity : BaseActivity() {
         binding.apply {
 
             btnSmsYes.setOnClickListener {
-                val intent = Intent(this@SMSAuthActivity, DashboardActivity::class.java)
+                val intent = Intent(this@SMSAuthActivity, ProfileActivity::class.java)
                 startActivity(intent)
                 finish()
             }
