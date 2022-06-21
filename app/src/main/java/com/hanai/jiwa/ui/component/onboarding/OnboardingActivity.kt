@@ -31,10 +31,20 @@ class OnboardingActivity : BaseActivity() {
         setContentView(view)
         binding.apply {
             // skip button event handler
-            btnSkip.setOnClickListener {
-                val dashboardIntent = Intent(this@OnboardingActivity, DashboardActivity::class.java)
-                startActivity(dashboardIntent)
-                finish()
+            btnSkip.setOnClickListener { navigateNextScreen() }
+            
+            btnPrev.setOnClickListener {
+                if (viewPager.currentItem > 0) {
+                    binding.viewPager.setCurrentItem(viewPager.currentItem - 1)
+                }
+            }
+
+            btnNext.setOnClickListener {
+                if (viewPager.currentItem <= 1) {
+                    binding.viewPager.setCurrentItem(viewPager.currentItem + 1)
+                } else {
+                    navigateNextScreen()
+                }
             }
         }
     }
@@ -42,7 +52,13 @@ class OnboardingActivity : BaseActivity() {
     override fun observeViewModel() {
     }
 
-    fun initOnboardingContentViewPager() {
+    private fun navigateNextScreen() {
+        val dashboardIntent = Intent(this, DashboardActivity::class.java)
+        startActivity(dashboardIntent)
+        finish()
+    }
+
+    private fun initOnboardingContentViewPager() {
         val dotsIndicator = findViewById<SpringDotsIndicator>(R.id.dot_indicator)
         val viewPager = findViewById<ViewPager>(R.id.view_pager)
         onboardingListAdapter =
@@ -89,11 +105,12 @@ class OnboardingActivity : BaseActivity() {
                 positionOffset: Float,
                 positionOffsetPixels: Int
             ) {
-                // your logic here
             }
 
             override fun onPageSelected(position: Int) {
-                // your logic here
+                binding.btnPrev.visibility = if (position == 0) View.INVISIBLE else View.VISIBLE
+                binding.btnSkip.visibility = if (position == 2) View.INVISIBLE else View.VISIBLE
+
             }
         }
 }

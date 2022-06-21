@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="@dimen/padding_16"
     android:paddingRight="@dimen/padding_16"
+    android:background="@color/screen_bg"
     tools:context=".ui.component.onboarding.OnboardingActivity">
 
 
@@ -32,6 +33,7 @@
             android:layout_toLeftOf="@+id/dot_indicator"
             android:text="@string/btn_previous"
             android:textAllCaps="false"
+            android:visibility="invisible"
             android:textColor="@color/dot_indicator_active"
             app:backgroundTint="@color/color_primary_variant"
             app:cornerRadius="@dimen/button_corner_radius" />

@@ -27,6 +27,14 @@ class LanguageActivity : BaseActivity() {
                 startActivity(intent)
                 finish()
             }
+
+            binding.lgEnglishPanel.setOnClickListener {
+
+            }
+
+            binding.lgMalayPanel.setOnClickListener {
+
+            }
         }
     }
 
