@@ -16,6 +16,8 @@
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_test.xml" value="0.11286874732791792" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.11714407866609662" />
+        <entry key="app/src/main/res/layout/fragment_profile_basic.xml" value="0.10816588285592134" />
+        <entry key="app/src/main/res/layout/fragment_profile_mother_info.xml" value="0.10816588285592134" />
         <entry key="app/src/main/res/layout/fragment_resources.xml" value="0.11799914493373237" />
         <entry key="app/src/main/res/layout/onboarding_viewpager_item.xml" value="0.11286874732791792" />
         <entry key="app/src/main/res/layout/sd.xml" value="0.1" />
