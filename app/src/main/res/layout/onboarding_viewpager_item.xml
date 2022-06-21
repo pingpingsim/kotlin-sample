@@ -25,10 +25,7 @@
         android:lineSpacingMultiplier="1.2"
         android:text="TITLE"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textFontWeight="700"
-        android:textSize="@dimen/main_title"
-        android:textStyle="bold" />
+        android:textAppearance="@style/HeadlineText" />
 
     <TextView
         android:id="@+id/txt_desc"
@@ -39,9 +36,6 @@
         android:lineSpacingMultiplier="1.2"
         android:text="DESC"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textFontWeight="400"
-        android:textSize="@dimen/main_desc"
-        android:textStyle="normal" />
+        android:textAppearance="@style/SubtitleText" />
 
 </RelativeLayout>

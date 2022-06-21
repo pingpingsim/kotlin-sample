@@ -32,7 +32,7 @@ class OnboardingActivity : BaseActivity() {
         binding.apply {
             // skip button event handler
             btnSkip.setOnClickListener { navigateNextScreen() }
-            
+
             btnPrev.setOnClickListener {
                 if (viewPager.currentItem > 0) {
                     binding.viewPager.setCurrentItem(viewPager.currentItem - 1)
