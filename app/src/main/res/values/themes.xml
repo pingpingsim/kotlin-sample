@@ -13,7 +13,9 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
         <item name="android:fontFamily">@font/euclidcircular</item>
-        <item name="fontFamily">@font/euclidcircular</item> <!-- target android sdk versions < 26 and > 14 if theme other than AppCompat -->
+        <item name="fontFamily">@font/euclidcircular</item>
+
+        <item name="colorControlActivated">@color/subtitle_font</item>
     </style>
 
     <style name="Theme.Jiwaibu.FullScreen">
@@ -31,5 +33,5 @@
     <style name="Theme.Jiwaibu.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Jiwaibu.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
+    
 </resources>

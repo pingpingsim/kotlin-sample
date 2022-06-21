@@ -11,6 +11,7 @@ import com.hanai.jiwa.databinding.ActivityOnboardingBinding
 import com.hanai.jiwa.ui.base.BaseActivity
 import com.hanai.jiwa.ui.component.dashboard.DashboardActivity
 import com.hanai.jiwa.ui.component.onboarding.adapter.OnboardingListAdapter
+import com.hanai.jiwa.ui.component.phone_auth.PhoneAuthActivity
 import com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -53,7 +54,7 @@ class OnboardingActivity : BaseActivity() {
     }
 
     private fun navigateNextScreen() {
-        val dashboardIntent = Intent(this, DashboardActivity::class.java)
+        val dashboardIntent = Intent(this, PhoneAuthActivity::class.java)
         startActivity(dashboardIntent)
         finish()
     }
