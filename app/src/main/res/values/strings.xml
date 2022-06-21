@@ -32,25 +32,25 @@
     <string name="phone_auth_sms_request_yes">Yes, I want SMS Texts</string>
     <string name="phone_auth_sms_request_no">I don\'t want text updates</string>
 
-    <!-- Profile Information -->
+    <!-- Profile - Basic Information -->
     <string name="profile_info_toolbar_title">Profile Information</string>
     <string name="profile_info_main_title">What\'s your name?</string>
     <string name="profile_info_main_desc">What name would you like to go by here? Enter your first name and last name to proceed</string>
     <string name="profile_first_name_hint">First Name</string>
     <string name="profile_last_name_hint">Last Name</string>
 
-    <!-- Date of Birth -->
+    <!-- Profile - Date of Birth -->
     <string name="birth_date_toolbar_title">Date of Birth</string>
     <string name="birth_date_main_title">When\'s your birthday?</string>
     <string name="birth_date_main_desc">Let us know when you were born and we can determine best tips based on your age!</string>
 
-    <!-- Mom's Profile -->
+    <!-- Profile - Mom's Profile -->
     <string name="mom_profile_toolbar_title">Mom\'s Profile</string>
     <string name="mom_profile_main_title">Are you expecting?</string>
     <string name="mom_profile_main_desc">If you want to track your pregnancy, let us know when your baby is due!</string>
     <string name="mom_profile_no_expecting">I\'m Not Expecting</string>
     <string name="mom_profile_get_started">Get Started</string>
-    <string name="mom_profile_due_date_unknown">I don\'t know my due date</string>
+    <string name="mom_profile_due_date_unknown"><u>I don\'t know my due date</u></string>
 
     <!-- Bottom Nav Menu -->
     <string name="bottom_nav_menu_title_home">Home</string>

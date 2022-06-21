@@ -9,6 +9,9 @@
         <entry key="app/src/main/res/layout/activity_language.xml" value="0.10902094912355707" />
         <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.14269605410715724" />
         <entry key="app/src/main/res/layout/activity_phone_auth.xml" value="0.23632507324218754" />
+        <entry key="app/src/main/res/layout/activity_profile_basic.xml" value="0.11372381359555365" />
+        <entry key="app/src/main/res/layout/activity_profile_birth_date.xml" value="0.11372381359555365" />
+        <entry key="app/src/main/res/layout/activity_profile_mother_info.xml" value="0.11372381359555365" />
         <entry key="app/src/main/res/layout/activity_sms_auth.xml" value="0.11372381359555365" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.11714407866609662" />
