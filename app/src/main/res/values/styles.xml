@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppBottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HeadlineText" parent="TextAppearance.AppCompat.Headline">
+        <item name="fontFamily">@font/euclidcircularb_bold</item>
+        <item name="android:textSize">@dimen/main_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontWeight">700</item>
+    </style>
+
+    <style name="SubtitleText" parent="TextAppearance.AppCompat.SearchResult.Subtitle">
+        <item name="fontFamily">@font/euclidcircularb_regular</item>
+        <item name="android:textSize">@dimen/main_desc</item>
+        <item name="fontStyle">normal</item>
+        <item name="fontWeight">400</item>
+    </style>
+
+    <style name="ButtonText" parent="TextAppearance.AppCompat.Caption">
+        <item name="fontFamily">@font/euclidcircularb_bold</item>
+        <item name="android:textSize">@dimen/button_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontWeight">700</item>
+    </style>
+
+    <style name="ShapeAppearance.App.CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

@@ -21,6 +21,11 @@
 
         <activity
             android:theme="@style/Theme.Jiwaibu.NoActionBar"
+            android:name=".ui.component.language.LanguageActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:theme="@style/Theme.Jiwaibu.NoActionBar"
             android:name=".ui.component.dashboard.DashboardActivity"
             android:screenOrientation="portrait" />
 

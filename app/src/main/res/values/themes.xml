@@ -14,12 +14,6 @@
         <!-- Customize your theme here. -->
         <item name="android:fontFamily">@font/euclidcircular</item>
         <item name="fontFamily">@font/euclidcircular</item> <!-- target android sdk versions < 26 and > 14 if theme other than AppCompat -->
-
-    </style>
-
-    <style name="ActionBarTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">@dimen/toolbar_font_size</item>
     </style>
 
     <style name="Theme.Jiwaibu.FullScreen">
@@ -37,11 +31,5 @@
     <style name="Theme.Jiwaibu.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Jiwaibu.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
-    <style name="AppBottomNavigationView" parent="Widget.Design.BottomNavigationView">
-        <item name="android:textSize">11sp</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="android:textStyle">bold</item>
-    </style>
 
 </resources>
