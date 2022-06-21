@@ -1,9 +1,11 @@
-package com.hanai.jiwa.ui.component.phone_auth
+package com.hanai.jiwa.ui.component.auth.phone
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import com.hanai.jiwa.databinding.ActivityPhoneAuthBinding
 import com.hanai.jiwa.ui.base.BaseActivity
+import com.hanai.jiwa.ui.component.auth.sms.SMSAuthActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -20,8 +22,13 @@ class PhoneAuthActivity : BaseActivity() {
         val view = binding.root
         setContentView(view)
         binding.apply {
-            //val inputText = outlinedTextField.editText?.text.toString()
-
+            val mobileNumber = mobileNumberTextField.editText?.text.toString()
+            val verificationCode = enterCodeTextField.editText?.text.toString()
+            btnSendCode.setOnClickListener {
+                val intent = Intent(this@PhoneAuthActivity, SMSAuthActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
         }
     }
 

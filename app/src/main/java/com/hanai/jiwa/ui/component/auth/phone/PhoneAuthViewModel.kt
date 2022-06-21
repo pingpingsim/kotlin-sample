@@ -1,4 +1,4 @@
-package com.hanai.jiwa.ui.component.phone_auth
+package com.hanai.jiwa.ui.component.auth.phone
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
