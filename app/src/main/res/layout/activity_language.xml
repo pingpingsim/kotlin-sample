@@ -58,6 +58,7 @@
                 android:id="@+id/lgEnglishPanel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/language_panel_inactive"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp"
                 android:paddingTop="@dimen/padding_16"
@@ -65,7 +66,7 @@
                 android:paddingBottom="@dimen/padding_16">
 
                 <TextView
-                    android:id="@+id/englishTextView"
+                    android:id="@+id/englishLblTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -96,6 +97,7 @@
                 android:id="@+id/lgMalayPanel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/language_panel_inactive"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp"
                 android:paddingTop="@dimen/padding_16"
@@ -103,7 +105,7 @@
                 android:paddingBottom="@dimen/padding_16">
 
                 <TextView
-                    android:id="@+id/kiswahiliTextView"
+                    android:id="@+id/malayLblTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -134,7 +136,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="36dp"
         android:backgroundTint="@color/button_disabled"
+        android:clickable="false"
         android:elevation="1dp"
+        android:enabled="false"
         android:paddingTop="@dimen/padding_16"
         android:paddingBottom="@dimen/padding_16"
         android:text="@string/btn_next_step"

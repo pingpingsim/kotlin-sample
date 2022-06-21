@@ -24,5 +24,7 @@
     <color name="subtitle_font">#80222222</color>
     <color name="separator">#DBD4CD</color>
     <color name="screen_bg">#FAFAFA</color>
+    <color name="language_panel_active">#9E999F</color>
+    <color name="language_panel_inactive">@color/white</color>
 
 </resources>
