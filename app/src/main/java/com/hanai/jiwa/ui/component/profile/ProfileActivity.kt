@@ -12,7 +12,6 @@ import com.hanai.jiwa.R
 import com.hanai.jiwa.databinding.ActivityProfileBinding
 import com.hanai.jiwa.ui.base.BaseFragmentActivity
 import com.hanai.jiwa.ui.component.dashboard.DashboardActivity
-import com.hanai.jiwa.ui.component.onboarding.OnboardingActivity
 import com.hanai.jiwa.ui.component.profile.basic.BasicFragment
 import com.hanai.jiwa.ui.component.profile.birthdate.BirthDateFragment
 import com.hanai.jiwa.ui.component.profile.motherinfo.MotherInfoFragment
