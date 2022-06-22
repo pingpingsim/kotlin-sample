@@ -17,9 +17,9 @@ class MotherInfoFragment() : BaseFragment<FragmentProfileMotherInfoBinding, Prof
 
         binding.root
         binding.apply {
-            //txtData.text = "Something"
-
+            btnGetStarted.setOnClickListener {
+                activityViewModel.saveMotherProfile()
+            }
         }
-        //viewModel.textMethod()
     }
 }

@@ -17,8 +17,9 @@ class BirthDateFragment() : BaseFragment<FragmentProfileBirthDateBinding, Profil
 
         binding.root
         binding.apply {
-            //txtData.text = "Something"
+            btnNextStep.setOnClickListener {
+                activityViewModel.saveBirthDateProfile()
+            }
         }
-        //viewModel.textMethod()
     }
 }
