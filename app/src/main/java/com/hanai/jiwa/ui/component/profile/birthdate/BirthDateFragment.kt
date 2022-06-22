@@ -17,8 +17,12 @@ class BirthDateFragment() : BaseFragment<FragmentProfileBirthDateBinding, Profil
 
         binding.root
         binding.apply {
+            val day: Int = datePicker.dayOfMonth
+            val month: Int = datePicker.month
+            val year: Int = datePicker.year
+
             btnNextStep.setOnClickListener {
-                activityViewModel.saveBirthDateProfile()
+                activityViewModel.saveBirthDateProfile(day, month, year)
             }
         }
     }

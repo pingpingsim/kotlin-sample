@@ -17,11 +17,12 @@ class BasicFragment() : BaseFragment<FragmentProfileBasicBinding, ProfileViewMod
 
         binding.root
         binding.apply {
-            //txtData.text = "Something"
+            val firstName = firstNameTextField.editText?.text.toString()
+            val lastName = lastNameTextField.editText?.text.toString()
+
             btnNextStep.setOnClickListener {
-                activityViewModel.saveBasicProfile()
+                activityViewModel.saveBasicProfile(firstName, lastName)
             }
         }
-        //viewModel.textMethod()
     }
 }

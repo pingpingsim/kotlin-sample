@@ -17,8 +17,12 @@ class MotherInfoFragment() : BaseFragment<FragmentProfileMotherInfoBinding, Prof
 
         binding.root
         binding.apply {
+            val day: Int = datePicker.dayOfMonth
+            val month: Int = datePicker.month
+            val year: Int = datePicker.year
+
             btnGetStarted.setOnClickListener {
-                activityViewModel.saveMotherProfile()
+                activityViewModel.saveMotherProfile(day, month, year)
             }
         }
     }

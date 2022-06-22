@@ -25,6 +25,8 @@ class PhoneAuthActivity : BaseActivity() {
             val mobileNumber = mobileNumberTextField.editText?.text.toString()
             val verificationCode = enterCodeTextField.editText?.text.toString()
             btnSendCode.setOnClickListener {
+                phoneAuthViewModel.setMobileNumber(mobileNumber)
+
                 val intent = Intent(this@PhoneAuthActivity, SMSAuthActivity::class.java)
                 startActivity(intent)
                 finish()

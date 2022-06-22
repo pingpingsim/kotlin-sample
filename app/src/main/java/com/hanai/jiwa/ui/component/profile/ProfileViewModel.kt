@@ -14,15 +14,15 @@ class ProfileViewModel : BaseViewModel() {
     private val saveMotherProfileLiveDataPrivate = MutableLiveData<Boolean>()
     val saveMotherProfile: LiveData<Boolean> get() = saveMotherProfileLiveDataPrivate
 
-    fun saveBasicProfile() {
+    fun saveBasicProfile(firstName: String, lastName: String) {
         saveBasicProfileLiveDataPrivate.postValue(true)
     }
 
-    fun saveBirthDateProfile() {
+    fun saveBirthDateProfile(day: Int, month: Int, year: Int) {
         saveBirthDateProfileLiveDataPrivate.postValue(true)
     }
 
-    fun saveMotherProfile() {
+    fun saveMotherProfile(day: Int, month: Int, year: Int) {
         saveMotherProfileLiveDataPrivate.postValue(true)
     }
 }
