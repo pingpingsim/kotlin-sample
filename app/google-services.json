@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "924942233999",
+    "project_id": "hanai-jiwa-ibu",
+    "storage_bucket": "hanai-jiwa-ibu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924942233999:android:bc40f382ccf99715a59bfa",
+        "android_client_info": {
+          "package_name": "com.hanai.jiwa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924942233999-lctbmea9dme8f59k1ihtue63g198fd4c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUv9NmTbK-hmNYCni3JhNVxseRDPwRm1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924942233999-lctbmea9dme8f59k1ihtue63g198fd4c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

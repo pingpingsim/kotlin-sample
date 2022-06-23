@@ -2,9 +2,14 @@ package com.hanai.jiwa.ui.component.auth.phone
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.hanai.jiwa.data.DataRepository
 import com.hanai.jiwa.ui.base.BaseViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class PhoneAuthViewModel : BaseViewModel() {
+@HiltViewModel
+class PhoneAuthViewModel @Inject constructor(private val dataRepository: DataRepository) :
+    BaseViewModel() {
     // phone number
     private val mobileNoLiveDataPrivate = MutableLiveData<String>()
     val mobileNumber: LiveData<String> get() = mobileNoLiveDataPrivate
@@ -20,5 +25,4 @@ class PhoneAuthViewModel : BaseViewModel() {
     fun setVerificationCode(verificationCode: String) {
         vfyCodeLiveDataPrivate.postValue(verificationCode)
     }
-
 }

@@ -87,8 +87,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"
                 android:imeOptions="actionNext"
+                android:inputType="text"
                 android:maxLines="1" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -104,6 +104,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="36dp"
             android:hint="@string/mobile_number_verification_code_hint"
+            android:visibility="gone"
             app:boxStrokeColor="@color/button_disabled"
             app:hintTextAppearance="@style/SubtitleText"
             app:hintTextColor="@color/subtitle_font"
@@ -135,6 +136,27 @@
             android:textAllCaps="false"
             android:textAppearance="@style/ButtonText"
             android:textColor="@color/white"
+            app:cornerRadius="@dimen/button_corner_radius"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/titleTextView"
+            app:layout_constraintTop_toBottomOf="@id/enterCodeTextField" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerifyCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="36dp"
+            android:backgroundTint="@color/button_enabled"
+            android:elevation="2dp"
+            android:paddingTop="@dimen/padding_16"
+            android:paddingBottom="@dimen/padding_16"
+            android:text="@string/btn_send_me_a_code"
+            android:textAllCaps="false"
+            android:textAppearance="@style/ButtonText"
+            android:textColor="@color/white"
+            android:visibility="gone"
             app:cornerRadius="@dimen/button_corner_radius"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@id/titleTextView"
