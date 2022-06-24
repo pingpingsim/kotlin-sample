@@ -1,14 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fillViewport="true">
 
-    <TextView
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="Home"
-        android:textSize="50sp" />
+        android:layout_height="match_parent"
+        android:background="@color/screen_bg"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <!-- See health experts tips -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSeeHealthExpertTips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_16"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/padding_16"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/button_enabled"
+            android:elevation="2dp"
+            android:paddingTop="@dimen/padding_16"
+            android:paddingBottom="@dimen/padding_16"
+            android:text="@string/home_btn_see_tips"
+            android:textAllCaps="false"
+            android:textAppearance="@style/ButtonText"
+            android:textColor="@color/white"
+            app:cornerRadius="@dimen/button_corner_radius"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/titleTextView"
+            app:layout_constraintTop_toBottomOf="@id/enterCodeTextField" />
+
+        <!-- Vaccination Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/menuVaccinationCardViewHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_16"
+            android:layout_marginEnd="@dimen/padding_16"
+            android:background="@color/white"
+            android:elevation="0dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descriptionTextView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/menuVaccinationPanel"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/menuVaccinationImg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/maternity"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/menuVaccinationTextView"
+                    app:layout_constraintHorizontal_weight="4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/menuVaccinationTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:text="@string/home_menu_vaccination"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/menuVaccinationImg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="6"
+                    app:layout_constraintStart_toEndOf="@+id/menuVaccinationImg"
+                    app:layout_constraintTop_toTopOf="@+id/menuVaccinationImg"
+                    app:titleTextAppearance="@style/ToolbarText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- Maternal Health Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/menuMaternalCardViewHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_16"
+            android:layout_marginTop="@dimen/padding_16"
+            android:layout_marginEnd="@dimen/padding_16"
+            android:background="@color/white"
+            android:elevation="0dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descriptionTextView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/menuMaternalPanel"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/menuMaternalImg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/maternity"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/menuMaternalTextView"
+                    app:layout_constraintHorizontal_weight="4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/menuMaternalTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:text="@string/home_menu_maternal_health"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/menuMaternalImg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="6"
+                    app:layout_constraintStart_toEndOf="@+id/menuMaternalImg"
+                    app:layout_constraintTop_toTopOf="@+id/menuMaternalImg"
+                    app:titleTextAppearance="@style/ToolbarText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Mental Health Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/menuMentalCardViewHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_16"
+            android:layout_marginTop="@dimen/padding_16"
+            android:layout_marginEnd="@dimen/padding_16"
+            android:background="@color/white"
+            android:elevation="0dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descriptionTextView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/menuMentalPanel"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/menuMentalImg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/mental_health"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/menuMentalTextView"
+                    app:layout_constraintHorizontal_weight="4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/menuMentalTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:text="@string/home_menu_mental_health"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/menuMentalImg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="6"
+                    app:layout_constraintStart_toEndOf="@+id/menuMentalImg"
+                    app:layout_constraintTop_toTopOf="@+id/menuMentalImg"
+                    app:titleTextAppearance="@style/ToolbarText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

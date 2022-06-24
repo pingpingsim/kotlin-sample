@@ -55,4 +55,11 @@
     <!-- Bottom Nav Menu -->
     <string name="bottom_nav_menu_title_home">Home</string>
     <string name="bottom_nav_menu_title_resources">Resources</string>
+
+    <!-- Home -->
+    <string name="home_btn_see_tips" translatable="false">See Health Experts\' Tips</string>
+    <string name="home_menu_vaccination" translatable="false">Vaccination</string>
+    <string name="home_menu_maternal_health" translatable="false">Maternal Health</string>
+    <string name="home_menu_mental_health" translatable="false">Mental Health</string>
+
 </resources>
