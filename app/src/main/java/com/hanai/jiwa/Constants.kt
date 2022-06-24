@@ -1,8 +1,6 @@
 package com.hanai.jiwa
 
 // Language
-const val LANGUAGE_EN = "en"
-const val LANGUAGE_BM = "malay"
 const val SPLASH_DELAY = 3000
 const val BASE_URL = ""
 
@@ -18,6 +16,5 @@ const val PHONE_NUMBER = "phonenumber"
 
 //Shared Preference
 const val SHARED_PREFERENCES_LANGUAGE = "language"
-const val SHARED_PREFERENCES_LANGUAGE_EN = "en"
-const val SHARED_PREFERENCES_LANGUAGE_MALAY = "malay"
-
+const val LANGUAGE_EN = "en"
+const val LANGUAGE_BM = "ms"

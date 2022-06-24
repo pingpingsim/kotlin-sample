@@ -26,11 +26,11 @@ class LanguageViewModel @Inject constructor(private val dataRepository: DataRepo
     }
 
     fun saveLanguageSelection() {
-        saveLanguageDataPrivate.postValue(true)
-
         viewModelScope.launch {
             dataRepository.setLanguage(languageLiveDataPrivate.value.toString())
-                .collect() { val success = it }
+                .collect() {
+                    saveLanguageDataPrivate.postValue(true)
+                }
         }
     }
 }
