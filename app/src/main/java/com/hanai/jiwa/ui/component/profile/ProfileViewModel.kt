@@ -24,7 +24,7 @@ class ProfileViewModel @Inject constructor(private val dataRepository: DataRepos
 
     fun saveBasicProfile(firstName: String, lastName: String) {
         saveBasicProfileLiveDataPrivate.postValue(true)
-        createUser()//test
+        //createUser()
     }
 
     fun saveBirthDateProfile(day: Int, month: Int, year: Int) {

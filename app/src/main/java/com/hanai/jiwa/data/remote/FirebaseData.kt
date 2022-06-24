@@ -14,12 +14,18 @@ import kotlinx.coroutines.tasks.await
 import javax.inject.Inject
 import javax.inject.Named
 
-class AuthRepository @Inject constructor(
+class FirebaseData @Inject constructor(
     private val auth: FirebaseAuth,
     private val db: FirebaseFirestore,
     @Named(USERS_REF)
     private val usersRef: CollectionReference
 ) {
+
+    suspend fun setFirebaseLanguage(language: String) = flow<Response<Boolean>> {
+        auth.setLanguageCode("en")
+        emit(Response.Success(true))
+    }
+
     suspend fun createUserWithEmailAndPassword(
         email: String,
         password: String,
@@ -41,7 +47,7 @@ class AuthRepository @Inject constructor(
                             PHONE_NUMBER to phoneNumber,
                         )
 
-                        db.collection(COLLECTION_PATH).document(currentUser.uid)
+                        db.collection(USERS_REF).document(currentUser.uid)
                             .set(user)
                             .addOnSuccessListener {
                             }

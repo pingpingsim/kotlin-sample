@@ -2,44 +2,26 @@ package com.hanai.jiwa.data.local
 
 import android.content.Context
 import android.content.SharedPreferences
+import com.hanai.jiwa.LANGUAGE_EN
+import com.hanai.jiwa.SHARED_PREFERENCES_LANGUAGE
+import com.hanai.jiwa.data.dto.Response
+import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
 class LocalData @Inject constructor(val context: Context) {
 
-//    fun getCachedFavourites(): Resource<Set<String>> {
-//        val sharedPref = context.getSharedPreferences(SHARED_PREFERENCES_FILE_NAME, 0)
-//        return Resource.Success(sharedPref.getStringSet(FAVOURITES_KEY, setOf()) ?: setOf())
-//    }
-//
-//    fun isFavourite(id: String): Resource<Boolean> {
-//        val sharedPref = context.getSharedPreferences(SHARED_PREFERENCES_FILE_NAME, 0)
-//        val cache = sharedPref.getStringSet(FAVOURITES_KEY, setOf<String>()) ?: setOf()
-//        return Resource.Success(cache.contains(id))
-//    }
-//
-//    fun cacheFavourites(ids: Set<String>): Resource<Boolean> {
-//        val sharedPref = context.getSharedPreferences(SHARED_PREFERENCES_FILE_NAME, 0)
-//        val editor: SharedPreferences.Editor = sharedPref.edit()
-//        editor.putStringSet(FAVOURITES_KEY, ids)
-//        editor.apply()
-//        val isSuccess = editor.commit()
-//        return Resource.Success(isSuccess)
-//    }
-//
-//    fun removeFromFavourites(id: String): Resource<Boolean> {
-//        val sharedPref = context.getSharedPreferences(SHARED_PREFERENCES_FILE_NAME, 0)
-//        var set = sharedPref.getStringSet(FAVOURITES_KEY, mutableSetOf<String>())?.toMutableSet() ?: mutableSetOf()
-//        if (set.contains(id)) {
-//            set.remove(id)
-//        }
-//        val editor: SharedPreferences.Editor = sharedPref.edit()
-//        editor.clear()
-//        editor.apply()
-//        editor.commit()
-//        editor.putStringSet(FAVOURITES_KEY, set)
-//        editor.apply()
-//        val isSuccess = editor.commit()
-//        return Resource.Success(isSuccess)
-//    }
-//
+    suspend fun getLanguage() = flow<Response<String>> {
+        val sharedPref = context.getSharedPreferences(SHARED_PREFERENCES_LANGUAGE, 0)
+        val language = sharedPref.getString(SHARED_PREFERENCES_LANGUAGE, LANGUAGE_EN) ?: LANGUAGE_EN
+        emit(Response.Success(language))
+    }
+
+    fun setLanguage(language: String) = flow<Response<Boolean>> {
+        val sharedPref = context.getSharedPreferences(SHARED_PREFERENCES_LANGUAGE, 0)
+        val editor: SharedPreferences.Editor = sharedPref.edit()
+        editor.putString(SHARED_PREFERENCES_LANGUAGE, language)
+        editor.apply()
+        val isSuccess = editor.commit()
+        emit(Response.Success(isSuccess))
+    }
 }

@@ -8,7 +8,9 @@ interface DataRepositorySource {
 
     suspend fun createNewAccount(): Flow<Response<Boolean>>
     suspend fun getUserProfile(): Flow<Response<UserModel>>
-    suspend fun setLanguage(): Flow<Response<Boolean>>
+    suspend fun setFirebaseLanguage(language: String): Flow<Response<Boolean>>
+    suspend fun getLanguage(): Flow<Response<String>>
+    suspend fun setLanguage(language: String): Flow<Response<Boolean>>
     suspend fun createUserWithEmailAndPassword(
         email: String,
         password: String,
