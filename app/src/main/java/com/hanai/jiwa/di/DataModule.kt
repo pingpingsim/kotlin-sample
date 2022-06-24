@@ -1,14 +1,10 @@
 package com.hanai.jiwa.di
 
-import android.content.Context
 import com.hanai.jiwa.data.DataRepository
 import com.hanai.jiwa.data.DataRepositorySource
-import com.hanai.jiwa.data.local.LocalData
 import dagger.Binds
 import dagger.Module
-import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 

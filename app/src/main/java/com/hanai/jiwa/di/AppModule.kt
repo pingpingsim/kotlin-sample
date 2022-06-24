@@ -2,6 +2,8 @@ package com.hanai.jiwa.di
 
 import android.content.Context
 import com.hanai.jiwa.data.local.LocalData
+import com.hanai.jiwa.utils.Network
+import com.hanai.jiwa.utils.NetworkConnectivity
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -27,9 +29,9 @@ class AppModule {
         return LocalData(context)
     }
 
-//    @Provides
-//    @Singleton
-//    fun provideNetworkConnectivity(@ApplicationContext context: Context): NetworkConnectivity {
-//        return Network(context)
-//    }
+    @Provides
+    @Singleton
+    fun provideNetworkConnectivity(@ApplicationContext context: Context): NetworkConnectivity {
+        return Network(context)
+    }
 }
